@@ -3,19 +3,28 @@ package TDD;
 import java.util.Scanner;
 public class FizzBuzz {
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		Scanner keyboard = new Scanner(System.in);
-		int input = keyboard.nextInt();
-		System.out.println(input);
-		int output = getInt(input);
-	
-}
-
-	public static int getInt(int kb) 
-	{
-		return kb;
+public static String getint(int kb) {
+		
+		String result = "";
+		
+		if(kb%5==0 && kb%3==0) 
+		{
+			result = "FizzBuzz";
+		}
+		else if(kb%3==0) 
+		{
+			result = "Fizz";
+		}
+		else if(kb%5==0)
+		{
+			result = "Buzz";
+		}
+		else
+		{
+			return String.valueOf(kb);
+		}
+		
+		return result;
 	}
 
 }
