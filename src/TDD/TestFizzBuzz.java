@@ -28,5 +28,10 @@ class TestFizzBuzz {
 		String output = call.getint(4);
 		assertEquals("4",output);
 	}
+	@Test //5
+	void input_is_5_expect_output_Buzz() {
+		String output = call.getint(5);
+		assertEquals("Buzz",output);
+	}
 
 }
